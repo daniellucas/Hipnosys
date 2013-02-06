@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <VisualStudioProject
+        ProjectType="Visual C++"
+        Version="9.00"
+        Name="DrawSprite_Iw2D_vc9"
+        ProjectGUID="{96CB0F47-2542-4636-21BB-9757D736FBC9}"
+        Keyword="Win32Proj">
+        <Platforms>            <Platform Name="Win32"/>
+        </Platforms>
+        <Configurations>
+
+                <Configuration
+                    Name="X86 Debug|Win32"
+                    OutputDirectory="Debug_DrawSprite_Iw2D_vc9_x86"
+                    IntermediateDirectory="Debug_DrawSprite_Iw2D_vc9_x86"
+                    ConfigurationType="2"
+                    UseOfMFC="0"
+                    CharacterSet="2">
+                    <Tool
+                        Name="VCCLCompilerTool"
+                        Detect64BitPortabilityProblems="FALSE"
+                        PreprocessorDefinitions="I3D_ARCH_X86;I3D_ARCH_I386"
+                        
+                        Optimization="0"
+                        DebugInformationFormat="4"
+                        MinimalRebuild="TRUE"
+                        
+                        BasicRuntimeChecks="3"
+                        
+                        EnableFunctionLevelLinking="TRUE"
+                        RuntimeLibrary="1"
+                        BrowseInformation="1"
+                        DefaultCharIsUnsigned="TRUE"
+                        AdditionalOptions="/S3Eproject  /FI &quot;c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\build_drawsprite_iw2d_vc9\temp_defines_debug.h&quot;"
+                        
+                        IgnoreStandardIncludePath="true"
+                        AdditionalIncludeDirectories="c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/h;c:/marmalade/6.2/modules/iwutil/h;c:/marmalade/6.2/modules/iwgeom/h;c:/marmalade/6.2/modules/iwresmanager/h;c:/marmalade/6.2/modules/iwgl/h;c:/marmalade/6.2/modules/iwgx/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/h;c:/marmalade/6.2/modules/iwgxfont/h;c:/marmalade/6.2/modules/iw2d/h;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/source;c:/marmalade/6.2/s3e/h;c:/marmalade/6.2/s3e/h/ext;c:/marmalade/6.2/s3e/h/std;c:/marmalade/6.2/s3e/h/std/c++;c:/marmalade/6.2/s3e/h/ext_legacy;c:/marmalade/6.2/s3e/h/legacy"
+                        UsePrecompiledHeader="0"
+                        WarningLevel="3"
+                        WarnAsError="false"
+                        ExceptionHandling="0"
+                        RuntimeTypeInfo="TRUE"
+
+                        />
+                   <Tool
+                        Name="VCPostBuildEventTool"
+                        CommandLine="set OLDDIR=%CD%&#x0D;&#x0A;echo C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;c:\marmalade\6.2\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e&quot;&#x0D;&#x0A;&quot;c:\marmalade\6.2\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d %OLDDIR%&#x0D;&#x0A;"/>
+
+                        <Tool
+                            Name="VCLinkerTool"
+                        LinkIncremental="2"
+                        GenerateDebugInformation="TRUE"
+                        TargetMachine="1"
+                        AdditionalOptions=" /include:_IwMain /include:_raise /include:_DllEntryPoint@12"
+                        
+EntryPointSymbol="DllEntryPoint"
+IgnoreDefaultLibraryNames="libcmt.lib"
+                            AdditionalDependencies="vc6_compat.lib jpeg_d.lib z_d.lib png_d.lib iwutil_d.lib iwgeom_d.lib iwresmanager_d.lib ATI_Compress_MT_VC7.lib iwgx_d.lib iwgl_d.lib iwgxfont_d.lib tiniconv_d.lib iw2d_d.lib s3e_cpp_vc8_d.lib s3e_d.lib s3e_api.lib"
+                            OutputFile="$(OutDir)/DrawSprite_Iw2D.s86"
+                            ProgramDatabaseFile="$(OutDir)/DrawSprite_Iw2D.pdb"
+                            AdditionalLibraryDirectories="&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libjpeg_6b\lib\x86&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\zlib_1.2.4\lib\x86&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libpng_1.2.34\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwutil\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwgeom\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwresmanager\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwgx\atitools&quot;;&quot;c:\marmalade\6.2\modules\iwgx\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwgl\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwgxfont\lib\x86&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iw2d\lib\x86&quot;;&quot;c:\marmalade\6.2\s3e\lib\x86&quot;"
+                            
+                            
+                            SubSystem="2"
+                            ImportLibrary="$(OutDir)/DrawSprite_Iw2D.lib"
+                            GenerateManifest="false"/>
+                    <Tool
+                        Name="VCMIDLTool"/>
+                    <Tool
+                        Name="VCCustomBuildTool"/>
+                    <Tool
+                        Name="VCPreBuildEventTool"/>
+                    <Tool
+                        Name="VCPreLinkEventTool"/>
+                    <Tool
+                        Name="VCResourceCompilerTool"/>
+                    <Tool
+                        Name="VCWebServiceProxyGeneratorTool"/>
+                    <Tool
+                        Name="VCWebDeploymentTool"/>
+                </Configuration>
+                <Configuration
+                    Name="X86 Release|Win32"
+                    OutputDirectory="Release_DrawSprite_Iw2D_vc9_x86"
+                    IntermediateDirectory="Release_DrawSprite_Iw2D_vc9_x86"
+                    ConfigurationType="2"
+                    UseOfMFC="0"
+                    CharacterSet="2">
+                    <Tool
+                        Name="VCCLCompilerTool"
+                        Detect64BitPortabilityProblems="FALSE"
+                        PreprocessorDefinitions="I3D_ARCH_X86;I3D_ARCH_I386"
+                        DebugInformationFormat="0"
+                        InlineFunctionExpansion="2"
+                        EnableIntrinsicFunctions="TRUE"
+                        OmitFramePointers="TRUE"
+                        EnableFunctionLevelLinking="TRUE"
+                        StringPooling="TRUE"
+                        RuntimeLibrary="1"
+                        AdditionalOptions="/S3Eproject  /FI &quot;c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\build_drawsprite_iw2d_vc9\temp_defines_release.h&quot;"
+                        BrowseInformation="1"
+                        DefaultCharIsUnsigned="TRUE"
+                        MinimalRebuild="FALSE"
+                        
+                        Optimization="2"
+                        IgnoreStandardIncludePath="true"
+                        AdditionalIncludeDirectories="c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/h;c:/marmalade/6.2/modules/iwutil/h;c:/marmalade/6.2/modules/iwgeom/h;c:/marmalade/6.2/modules/iwresmanager/h;c:/marmalade/6.2/modules/iwgl/h;c:/marmalade/6.2/modules/iwgx/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/h;c:/marmalade/6.2/modules/iwgxfont/h;c:/marmalade/6.2/modules/iw2d/h;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/source;c:/marmalade/6.2/s3e/h;c:/marmalade/6.2/s3e/h/ext;c:/marmalade/6.2/s3e/h/std;c:/marmalade/6.2/s3e/h/std/c++;c:/marmalade/6.2/s3e/h/ext_legacy;c:/marmalade/6.2/s3e/h/legacy"
+                        UsePrecompiledHeader="0"
+                        WarningLevel="3"
+                        WarnAsError="false"
+                        ExceptionHandling="0"
+                        RuntimeTypeInfo="TRUE"
+
+                        />
+                   <Tool
+                        Name="VCPostBuildEventTool"
+                        CommandLine="set OLDDIR=%CD%&#x0D;&#x0A;echo C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;c:\marmalade\6.2\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e&quot;&#x0D;&#x0A;&quot;c:\marmalade\6.2\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d %OLDDIR%&#x0D;&#x0A;"/>
+
+                        <Tool
+                            Name="VCLinkerTool"
+                        LinkIncremental="1"
+                        GenerateDebugInformation="TRUE"
+                        TargetMachine="1"
+                        AdditionalOptions=" /include:_IwMain /include:_raise /include:_DllEntryPoint@12"
+                        
+EntryPointSymbol="DllEntryPoint"
+IgnoreDefaultLibraryNames="libcmt.lib"
+                            AdditionalDependencies="vc6_compat.lib jpeg.lib z.lib png.lib iwutil.lib iwgeom.lib iwresmanager.lib ATI_Compress_MT_VC7.lib iwgx.lib iwgl.lib iwgxfont.lib tiniconv.lib iw2d.lib s3e_cpp_vc8.lib s3e.lib s3e_api.lib"
+                            OutputFile="$(OutDir)/DrawSprite_Iw2D.s86"
+                            ProgramDatabaseFile="$(OutDir)/DrawSprite_Iw2D.pdb"
+                            AdditionalLibraryDirectories="&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libjpeg_6b\lib\x86&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\zlib_1.2.4\lib\x86&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libpng_1.2.34\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwutil\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwgeom\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwresmanager\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwgx\atitools&quot;;&quot;c:\marmalade\6.2\modules\iwgx\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwgl\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iwgxfont\lib\x86&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\lib\x86&quot;;&quot;c:\marmalade\6.2\modules\iw2d\lib\x86&quot;;&quot;c:\marmalade\6.2\s3e\lib\x86&quot;"
+                            
+                            
+                            SubSystem="2"
+                            ImportLibrary="$(OutDir)/DrawSprite_Iw2D.lib"
+                            GenerateManifest="false"/>
+                    <Tool
+                        Name="VCMIDLTool"/>
+                    <Tool
+                        Name="VCCustomBuildTool"/>
+                    <Tool
+                        Name="VCPreBuildEventTool"/>
+                    <Tool
+                        Name="VCPreLinkEventTool"/>
+                    <Tool
+                        Name="VCResourceCompilerTool"/>
+                    <Tool
+                        Name="VCWebServiceProxyGeneratorTool"/>
+                    <Tool
+                        Name="VCWebDeploymentTool"/>
+                </Configuration>
+                <Configuration
+                    Name="RVCT ARM Debug|Win32"
+                    OutputDirectory="Debug_DrawSprite_Iw2D_vc9_arm"
+                    IntermediateDirectory="Debug_DrawSprite_Iw2D_vc9_arm"
+                    ConfigurationType="2"
+                    UseOfMFC="0"
+                    CharacterSet="2">
+                    <Tool
+                        Name="VCCLCompilerTool"
+                        Detect64BitPortabilityProblems="FALSE"
+                        PreprocessorDefinitions="I3D_ARCH_ARM"
+                        Optimization="0"
+                        DebugInformationFormat="0"
+                        BasicRuntimeChecks="3"
+                        RuntimeLibrary="1"
+                        BrowseInformation="0"
+                        DefaultCharIsUnsigned="TRUE"
+                        MinimalRebuild="FALSE"
+                        AdditionalOptions="/S3Eproject  /FI &quot;c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\build_drawsprite_iw2d_vc9\temp_defines_debug.h&quot; /Fe&quot;s3e-custom-tool='__invalid__rvct' tooltype=rvct_compiler --enum_is_int --unsigned_chars --interleave --diag_remark=1,9,111,174,128,177,196,381,550,611,815,1293,1295,1299,1300,1304,3017,3052,390 --apcs=/noropi --library_interface=aeabi_glibc --no-hide-all --no_unaligned_access --no_exceptions --fpu=softvfp+vfpv2 --apcs=/interwork --cpu=5TE --no-rvct -Jc:/MARMAL~1/6.2/s3e/h/std --asm --cppflag=--cpp -g -O0 --no_inline --diag_style=ide --default_extension=obj &quot; /FD  "
+                        
+                        IgnoreStandardIncludePath="true"
+                        AdditionalIncludeDirectories="c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/h;c:/marmalade/6.2/modules/iwutil/h;c:/marmalade/6.2/modules/iwgeom/h;c:/marmalade/6.2/modules/iwresmanager/h;c:/marmalade/6.2/modules/iwgl/h;c:/marmalade/6.2/modules/iwgx/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/h;c:/marmalade/6.2/modules/iwgxfont/h;c:/marmalade/6.2/modules/iw2d/h;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/source;c:/marmalade/6.2/s3e/h;c:/marmalade/6.2/s3e/h/ext;c:/marmalade/6.2/s3e/h/std;c:/marmalade/6.2/s3e/h/std/c++;c:/marmalade/6.2/s3e/h/ext_legacy;c:/marmalade/6.2/s3e/h/legacy"
+                        UsePrecompiledHeader="0"
+                        WarningLevel="3"
+                        WarnAsError="false"
+                        ExceptionHandling="0"
+                        RuntimeTypeInfo="TRUE"
+
+                        />
+                   <Tool
+                        Name="VCPostBuildEventTool"
+                        CommandLine="set OLDDIR=%CD%&#x0D;&#x0A;echo C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d %OLDDIR%&#x0D;&#x0A;"/>
+
+                        <Tool
+                            Name="VCLinkerTool"
+                        LinkIncremental="2"
+                        GenerateDebugInformation="FALSE"
+                        AdditionalOptions="/COMMENT:&quot;s3e-custom-tool='__invalid__rvct' tooltype=rvct_linker --diag_suppress=6331,6780,6340 --no_locals --datacompressor=off --remove --symbols --unmangled --callgraph --map --info=sizes,totals,inline,tailreorder,veneers --no-rvct --scatter='c:/marmalade/6.2/s3e/makefile_builder/templates/rvct_linker_script' --list='$(OutDir)/DrawSprite_Iw2D.map' jpeg_d.a z_d.a png_d.a libiwutil_d.a libiwgeom_d.a libiwresmanager_d.a libiwgx_d.a iwgl_d.a libiwgxfont_d.a tiniconv_d.a libiw2d_d.a s3e_cpp_d.a s3e_d.a s3e_d.a(iwcrt.o) s3e_api.a --plink:--arch=armv5TE --plink:--vfp&quot; "
+                        TargetMachine="1"
+                        
+                            AdditionalDependencies=""
+                            OutputFile="$(OutDir)/DrawSprite_Iw2D.s3e"
+                            ProgramDatabaseFile="$(OutDir)/DrawSprite_Iw2D.pdb"
+                            AdditionalLibraryDirectories="&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libjpeg_6b\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\zlib_1.2.4\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libpng_1.2.34\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwutil\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgeom\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwresmanager\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgx\atitools&quot;;&quot;c:\marmalade\6.2\modules\iwgx\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgl\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgxfont\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iw2d\lib\arm&quot;;&quot;c:\marmalade\6.2\s3e\lib\arm&quot;"
+                            
+                            
+                            SubSystem="2"
+                            ImportLibrary="$(OutDir)/DrawSprite_Iw2D.lib"
+                            GenerateManifest="false"/>
+                    <Tool
+                        Name="VCMIDLTool"/>
+                    <Tool
+                        Name="VCCustomBuildTool"/>
+                    <Tool
+                        Name="VCPreBuildEventTool"/>
+                    <Tool
+                        Name="VCPreLinkEventTool"/>
+                    <Tool
+                        Name="VCResourceCompilerTool"/>
+                    <Tool
+                        Name="VCWebServiceProxyGeneratorTool"/>
+                    <Tool
+                        Name="VCWebDeploymentTool"/>
+                </Configuration>
+                <Configuration
+                    Name="RVCT ARM Release|Win32"
+                    OutputDirectory="Release_DrawSprite_Iw2D_vc9_arm"
+                    IntermediateDirectory="Release_DrawSprite_Iw2D_vc9_arm"
+                    ConfigurationType="2"
+                    UseOfMFC="0"
+                    CharacterSet="2">
+                    <Tool
+                        Name="VCCLCompilerTool"
+                        Detect64BitPortabilityProblems="FALSE"
+                        PreprocessorDefinitions="I3D_ARCH_ARM"
+                        Optimization="2"
+                        InlineFunctionExpansion="2"
+                        EnableIntrinsicFunctions="TRUE"
+                        OmitFramePointers="TRUE"
+                        EnableFunctionLevelLinking="TRUE"
+                        StringPooling="TRUE"
+                        DebugInformationFormat="0"
+                        RuntimeLibrary="0"
+                        BrowseInformation="0"
+                        MinimalRebuild="FALSE"
+                        AdditionalOptions="/S3Eproject  /FI &quot;c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\build_drawsprite_iw2d_vc9\temp_defines_release.h&quot; /Fe&quot;s3e-custom-tool='__invalid__rvct' tooltype=rvct_compiler --enum_is_int --unsigned_chars --interleave --diag_remark=1,9,111,174,128,177,196,381,550,611,815,1293,1295,1299,1300,1304,3017,3052,390 --apcs=/noropi --library_interface=aeabi_glibc --no-hide-all --no_unaligned_access --no_exceptions --fpu=softvfp+vfpv2 --apcs=/interwork --cpu=5TE --no-rvct -Jc:/MARMAL~1/6.2/s3e/h/std --asm --cppflag=--cpp --split_sections -Otime -O3 --diag_style=ide --default_extension=obj &quot; /FD "
+                        
+                        IgnoreStandardIncludePath="true"
+                        AdditionalIncludeDirectories="c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/h;c:/marmalade/6.2/modules/iwutil/h;c:/marmalade/6.2/modules/iwgeom/h;c:/marmalade/6.2/modules/iwresmanager/h;c:/marmalade/6.2/modules/iwgl/h;c:/marmalade/6.2/modules/iwgx/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/h;c:/marmalade/6.2/modules/iwgxfont/h;c:/marmalade/6.2/modules/iw2d/h;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/source;c:/marmalade/6.2/s3e/h;c:/marmalade/6.2/s3e/h/ext;c:/marmalade/6.2/s3e/h/std;c:/marmalade/6.2/s3e/h/std/c++;c:/marmalade/6.2/s3e/h/ext_legacy;c:/marmalade/6.2/s3e/h/legacy"
+                        UsePrecompiledHeader="0"
+                        WarningLevel="3"
+                        WarnAsError="false"
+                        ExceptionHandling="0"
+                        RuntimeTypeInfo="TRUE"
+
+                        />
+                   <Tool
+                        Name="VCPostBuildEventTool"
+                        CommandLine="set OLDDIR=%CD%&#x0D;&#x0A;echo C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d %OLDDIR%&#x0D;&#x0A;"/>
+
+                        <Tool
+                            Name="VCLinkerTool"
+                        LinkIncremental="1"
+                        GenerateDebugInformation="FALSE"
+                        AdditionalOptions="/COMMENT:&quot;s3e-custom-tool='__invalid__rvct' tooltype=rvct_linker --diag_suppress=6331,6780,6340 --no_locals --datacompressor=off --remove --symbols --unmangled --callgraph --map --info=sizes,totals,inline,tailreorder,veneers --no-rvct --scatter='c:/marmalade/6.2/s3e/makefile_builder/templates/rvct_linker_script' --list='$(OutDir)/DrawSprite_Iw2D.map' jpeg.a z.a png.a libiwutil.a libiwgeom.a libiwresmanager.a libiwgx.a iwgl.a libiwgxfont.a tiniconv.a libiw2d.a s3e_cpp.a s3e.a s3e.a(iwcrt.o) s3e_api.a --plink:--arch=armv5TE --plink:--vfp&quot; "
+                        TargetMachine="1"
+                        
+                            AdditionalDependencies=""
+                            OutputFile="$(OutDir)/DrawSprite_Iw2D.s3e"
+                            ProgramDatabaseFile="$(OutDir)/DrawSprite_Iw2D.pdb"
+                            AdditionalLibraryDirectories="&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libjpeg_6b\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\zlib_1.2.4\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libpng_1.2.34\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwutil\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgeom\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwresmanager\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgx\atitools&quot;;&quot;c:\marmalade\6.2\modules\iwgx\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgl\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgxfont\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iw2d\lib\arm&quot;;&quot;c:\marmalade\6.2\s3e\lib\arm&quot;"
+                            
+                            
+                            SubSystem="2"
+                            ImportLibrary="$(OutDir)/DrawSprite_Iw2D.lib"
+                            GenerateManifest="false"/>
+                    <Tool
+                        Name="VCMIDLTool"/>
+                    <Tool
+                        Name="VCCustomBuildTool"/>
+                    <Tool
+                        Name="VCPreBuildEventTool"/>
+                    <Tool
+                        Name="VCPreLinkEventTool"/>
+                    <Tool
+                        Name="VCResourceCompilerTool"/>
+                    <Tool
+                        Name="VCWebServiceProxyGeneratorTool"/>
+                    <Tool
+                        Name="VCWebDeploymentTool"/>
+                </Configuration>
+                <Configuration
+                    Name="GCC ARM Debug|Win32"
+                    OutputDirectory="Debug_DrawSprite_Iw2D_vc9_gcc_arm"
+                    IntermediateDirectory="Debug_DrawSprite_Iw2D_vc9_gcc_arm"
+                    ConfigurationType="2"
+                    UseOfMFC="0"
+                    CharacterSet="2">
+                    <Tool
+                        Name="VCCLCompilerTool"
+                        Detect64BitPortabilityProblems="FALSE"
+                        PreprocessorDefinitions="I3D_ARCH_ARM"
+                        Optimization="0"
+                        DebugInformationFormat="0"
+                        BasicRuntimeChecks="3"
+                        RuntimeLibrary="1"
+                        BrowseInformation="0"
+                        DefaultCharIsUnsigned="TRUE"
+                        MinimalRebuild="FALSE"
+                        AdditionalOptions="/S3Eproject  /FI &quot;c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\build_drawsprite_iw2d_vc9\temp_defines_debug.h&quot; /Fe&quot;s3e-custom-tool='c:/marmalade/6.2/s3e/gcc/bin/arm-none-eabi-gcc.exe' tooltype=gcc_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -ffunction-sections -mstructure-size-boundary=8 -mfpu=vfp -mfloat-abi=softfp -mthumb-interwork -march=armv5te -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -g -O0&quot; /FD  "
+                        
+                        IgnoreStandardIncludePath="true"
+                        AdditionalIncludeDirectories="c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/h;c:/marmalade/6.2/modules/iwutil/h;c:/marmalade/6.2/modules/iwgeom/h;c:/marmalade/6.2/modules/iwresmanager/h;c:/marmalade/6.2/modules/iwgl/h;c:/marmalade/6.2/modules/iwgx/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/h;c:/marmalade/6.2/modules/iwgxfont/h;c:/marmalade/6.2/modules/iw2d/h;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/source;c:/marmalade/6.2/s3e/h;c:/marmalade/6.2/s3e/h/ext;c:/marmalade/6.2/s3e/h/std;c:/marmalade/6.2/s3e/h/std/c++;c:/marmalade/6.2/s3e/h/ext_legacy;c:/marmalade/6.2/s3e/h/legacy"
+                        UsePrecompiledHeader="0"
+                        WarningLevel="3"
+                        WarnAsError="false"
+                        ExceptionHandling="0"
+                        RuntimeTypeInfo="TRUE"
+
+                        />
+                   <Tool
+                        Name="VCPostBuildEventTool"
+                        CommandLine="set OLDDIR=%CD%&#x0D;&#x0A;echo C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d %OLDDIR%&#x0D;&#x0A;"/>
+
+                        <Tool
+                            Name="VCLinkerTool"
+                        LinkIncremental="2"
+                        GenerateDebugInformation="FALSE"
+                        AdditionalOptions="/COMMENT:&quot;s3e-custom-tool='c:/marmalade/6.2/s3e/gcc/bin/arm-none-eabi-g++.exe' tooltype=gcc_linker -Wl,--gc-sections -Wl,--as-needed -mthumb-interwork -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Tlinker_script -lc -lm -Wl,-Map='$(OutDir)/DrawSprite_Iw2D.map' -Wl,--start-group -Wl,--whole-archive -liwutil_d -liwgeom_d -liwresmanager_d -liwgx_d -liwgxfont_d -liw2d_d -Wl,--no-whole-archive -ljpeg_d -lz_d -lpng_d -liwgl_d -ltiniconv_d -ls3e_cpp_d -ls3e_d -ls3e_api -ls3e_api -Wl,--end-group --plink:--arch=armv5TE --plink:--vfp&quot; "
+                        TargetMachine="1"
+                        
+                            AdditionalDependencies=""
+                            OutputFile="$(OutDir)/DrawSprite_Iw2D.s3e"
+                            ProgramDatabaseFile="$(OutDir)/DrawSprite_Iw2D.pdb"
+                            AdditionalLibraryDirectories="&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libjpeg_6b\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\zlib_1.2.4\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libpng_1.2.34\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwutil\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgeom\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwresmanager\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgx\atitools&quot;;&quot;c:\marmalade\6.2\modules\iwgx\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgl\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgxfont\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iw2d\lib\arm&quot;;&quot;c:\marmalade\6.2\s3e\lib\arm&quot;"
+                            
+                            
+                            SubSystem="2"
+                            ImportLibrary="$(OutDir)/DrawSprite_Iw2D.lib"
+                            GenerateManifest="false"/>
+                    <Tool
+                        Name="VCMIDLTool"/>
+                    <Tool
+                        Name="VCCustomBuildTool"/>
+                    <Tool
+                        Name="VCPreBuildEventTool"/>
+                    <Tool
+                        Name="VCPreLinkEventTool"/>
+                    <Tool
+                        Name="VCResourceCompilerTool"/>
+                    <Tool
+                        Name="VCWebServiceProxyGeneratorTool"/>
+                    <Tool
+                        Name="VCWebDeploymentTool"/>
+                </Configuration>
+                <Configuration
+                    Name="GCC ARM Release|Win32"
+                    OutputDirectory="Release_DrawSprite_Iw2D_vc9_gcc_arm"
+                    IntermediateDirectory="Release_DrawSprite_Iw2D_vc9_gcc_arm"
+                    ConfigurationType="2"
+                    UseOfMFC="0"
+                    CharacterSet="2">
+                    <Tool
+                        Name="VCCLCompilerTool"
+                        Detect64BitPortabilityProblems="FALSE"
+                        PreprocessorDefinitions="I3D_ARCH_ARM"
+                        Optimization="2"
+                        InlineFunctionExpansion="2"
+                        EnableIntrinsicFunctions="TRUE"
+                        OmitFramePointers="TRUE"
+                        EnableFunctionLevelLinking="TRUE"
+                        StringPooling="TRUE"
+                        DebugInformationFormat="0"
+                        RuntimeLibrary="0"
+                        BrowseInformation="0"
+                        DefaultCharIsUnsigned="TRUE"
+                        MinimalRebuild="FALSE"
+                        AdditionalOptions="/S3Eproject  /FI &quot;c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\build_drawsprite_iw2d_vc9\temp_defines_release.h&quot; /Fe&quot;s3e-custom-tool='c:/marmalade/6.2/s3e/gcc/bin/arm-none-eabi-gcc.exe' tooltype=gcc_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -ffunction-sections -mstructure-size-boundary=8 -mfpu=vfp -mfloat-abi=softfp -mthumb-interwork -march=armv5te -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -fomit-frame-pointer -O3&quot; /FD  "
+                        
+                        IgnoreStandardIncludePath="true"
+                        AdditionalIncludeDirectories="c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/h;c:/marmalade/6.2/modules/iwutil/h;c:/marmalade/6.2/modules/iwgeom/h;c:/marmalade/6.2/modules/iwresmanager/h;c:/marmalade/6.2/modules/iwgl/h;c:/marmalade/6.2/modules/iwgx/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/h;c:/marmalade/6.2/modules/iwgxfont/h;c:/marmalade/6.2/modules/iw2d/h;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/source;c:/marmalade/6.2/s3e/h;c:/marmalade/6.2/s3e/h/ext;c:/marmalade/6.2/s3e/h/std;c:/marmalade/6.2/s3e/h/std/c++;c:/marmalade/6.2/s3e/h/ext_legacy;c:/marmalade/6.2/s3e/h/legacy"
+                        UsePrecompiledHeader="0"
+                        WarningLevel="3"
+                        WarnAsError="false"
+                        ExceptionHandling="0"
+                        RuntimeTypeInfo="TRUE"
+
+                        />
+                   <Tool
+                        Name="VCPostBuildEventTool"
+                        CommandLine="set OLDDIR=%CD%&#x0D;&#x0A;echo C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d %OLDDIR%&#x0D;&#x0A;"/>
+
+                        <Tool
+                            Name="VCLinkerTool"
+                        LinkIncremental="1"
+                        GenerateDebugInformation="FALSE"
+                        AdditionalOptions="/COMMENT:&quot;s3e-custom-tool='c:/marmalade/6.2/s3e/gcc/bin/arm-none-eabi-g++.exe' tooltype=gcc_linker -Wl,--gc-sections -Wl,--as-needed -mthumb-interwork -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Tlinker_script -lc -lm -Wl,-Map='$(OutDir)/DrawSprite_Iw2D.map' -Wl,--start-group -Wl,--whole-archive -liwutil -liwgeom -liwresmanager -liwgx -liwgxfont -liw2d -Wl,--no-whole-archive -ljpeg -lz -lpng -liwgl -ltiniconv -ls3e_cpp -ls3e -ls3e_api -ls3e_api -Wl,--end-group --plink:--arch=armv5TE --plink:--vfp&quot; "
+                        TargetMachine="1"
+                        
+                            AdditionalDependencies=""
+                            OutputFile="$(OutDir)/DrawSprite_Iw2D.s3e"
+                            ProgramDatabaseFile="$(OutDir)/DrawSprite_Iw2D.pdb"
+                            AdditionalLibraryDirectories="&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libjpeg_6b\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\zlib_1.2.4\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libpng_1.2.34\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwutil\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgeom\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwresmanager\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgx\atitools&quot;;&quot;c:\marmalade\6.2\modules\iwgx\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgl\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iwgxfont\lib\arm&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\lib\arm&quot;;&quot;c:\marmalade\6.2\modules\iw2d\lib\arm&quot;;&quot;c:\marmalade\6.2\s3e\lib\arm&quot;"
+                            
+                            
+                            SubSystem="2"
+                            ImportLibrary="$(OutDir)/DrawSprite_Iw2D.lib"
+                            GenerateManifest="false"/>
+                    <Tool
+                        Name="VCMIDLTool"/>
+                    <Tool
+                        Name="VCCustomBuildTool"/>
+                    <Tool
+                        Name="VCPreBuildEventTool"/>
+                    <Tool
+                        Name="VCPreLinkEventTool"/>
+                    <Tool
+                        Name="VCResourceCompilerTool"/>
+                    <Tool
+                        Name="VCWebServiceProxyGeneratorTool"/>
+                    <Tool
+                        Name="VCWebDeploymentTool"/>
+                </Configuration>
+                <Configuration
+                    Name="GCC MIPS Debug|Win32"
+                    OutputDirectory="Debug_DrawSprite_Iw2D_vc9_gcc_mips"
+                    IntermediateDirectory="Debug_DrawSprite_Iw2D_vc9_gcc_mips"
+                    ConfigurationType="2"
+                    UseOfMFC="0"
+                    CharacterSet="2">
+                    <Tool
+                        Name="VCCLCompilerTool"
+                        Detect64BitPortabilityProblems="FALSE"
+                        PreprocessorDefinitions=""
+                        Optimization="0"
+                        DebugInformationFormat="0"
+                        BasicRuntimeChecks="3"
+                        RuntimeLibrary="1"
+                        BrowseInformation="0"
+                        DefaultCharIsUnsigned="TRUE"
+                        MinimalRebuild="FALSE"
+                        AdditionalOptions="/S3Eproject  /FI &quot;c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\build_drawsprite_iw2d_vc9\temp_defines_debug.h&quot; /Fe&quot;s3e-custom-tool='c:/marmalade/6.2/tools/gcc/mips/android_mips_windows/bin/mipsel-linux-android-gcc.exe' tooltype=gcc_mips_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -fPIC -EL -mips1 -mabi=32 -Wno-switch -fvisibility=hidden -nostdinc -fPIC --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-frtti --cppflag=-nostdinc++ -g -O0&quot; /FD  "
+                        
+                        IgnoreStandardIncludePath="true"
+                        AdditionalIncludeDirectories="c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/h;c:/marmalade/6.2/modules/iwutil/h;c:/marmalade/6.2/modules/iwgeom/h;c:/marmalade/6.2/modules/iwresmanager/h;c:/marmalade/6.2/modules/iwgl/h;c:/marmalade/6.2/modules/iwgx/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/h;c:/marmalade/6.2/modules/iwgxfont/h;c:/marmalade/6.2/modules/iw2d/h;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/source;c:/marmalade/6.2/s3e/h;c:/marmalade/6.2/s3e/h/ext;c:/marmalade/6.2/s3e/h/std;c:/marmalade/6.2/s3e/h/std/c++;c:/marmalade/6.2/s3e/h/ext_legacy;c:/marmalade/6.2/s3e/h/legacy"
+                        UsePrecompiledHeader="0"
+                        WarningLevel="3"
+                        WarnAsError="false"
+                        ExceptionHandling="0"
+                        RuntimeTypeInfo="TRUE"
+
+                        />
+                   <Tool
+                        Name="VCPostBuildEventTool"
+                        CommandLine="set OLDDIR=%CD%&#x0D;&#x0A;echo C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;c:\marmalade\6.2\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e&quot;&#x0D;&#x0A;&quot;c:\marmalade\6.2\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d %OLDDIR%&#x0D;&#x0A;"/>
+
+                        <Tool
+                            Name="VCLinkerTool"
+                        LinkIncremental="2"
+                        GenerateDebugInformation="FALSE"
+                        AdditionalOptions="/COMMENT:&quot;s3e-custom-tool='c:/marmalade/6.2/tools/gcc/mips/android_mips_windows/bin/mipsel-linux-android-g++.exe' tooltype=gcc_mips_linker -Wl,--as-needed --sysroot=c:/marmalade/6.2/s3e\..\tools\gcc\mips\android_mips_windows/android-14/arch-mips -Wl,--no-undefined -shared -EL -mips1 -mabi=32 -static-libgcc -nodefaultlibs -Wl,--entry=_IwMain -frtti -Wl,-Tmips_linker_script -Wl,-init -Wl,iwcrt_mips_init -Wl,-fini -Wl,iwcrt_mips_fini -Wl,--no-undefined -Wl,-u_IwAppEntry -Wl,-u_IwAppVersionMajor -Wl,-u_IwAppVersionMinor -Wl,--entry=_IwAppEntry -shared -Wl,-Map='$(OutDir)/DrawSprite_Iw2D.map' -Wl,--start-group -Wl,--whole-archive -liwutil_d -liwgeom_d -liwresmanager_d -liwgx_d -liwgxfont_d -liw2d_d -Wl,--no-whole-archive -ljpeg_d -lz_d -lpng_d -liwgl_d -ltiniconv_d -ls3e_cpp_d -ls3e_d -ls3e_api -lstdc++ -lc -lm -lgcc -Wl,--end-group --plink:-i&quot; "
+                        TargetMachine="1"
+                        
+                            AdditionalDependencies=""
+                            OutputFile="$(OutDir)/DrawSprite_Iw2D.so"
+                            ProgramDatabaseFile="$(OutDir)/DrawSprite_Iw2D.pdb"
+                            AdditionalLibraryDirectories="&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libjpeg_6b\lib\mips\linux&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\zlib_1.2.4\lib\mips\linux&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libpng_1.2.34\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwutil\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwgeom\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwresmanager\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwgx\atitools&quot;;&quot;c:\marmalade\6.2\modules\iwgx\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwgl\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwgxfont\lib\mips\linux&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iw2d\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\s3e\lib\mips\linux&quot;"
+                            
+                            
+                            SubSystem="2"
+                            ImportLibrary="$(OutDir)/DrawSprite_Iw2D.lib"
+                            GenerateManifest="false"/>
+                    <Tool
+                        Name="VCMIDLTool"/>
+                    <Tool
+                        Name="VCCustomBuildTool"/>
+                    <Tool
+                        Name="VCPreBuildEventTool"/>
+                    <Tool
+                        Name="VCPreLinkEventTool"/>
+                    <Tool
+                        Name="VCResourceCompilerTool"/>
+                    <Tool
+                        Name="VCWebServiceProxyGeneratorTool"/>
+                    <Tool
+                        Name="VCWebDeploymentTool"/>
+                </Configuration>
+                <Configuration
+                    Name="GCC MIPS Release|Win32"
+                    OutputDirectory="Release_DrawSprite_Iw2D_vc9_gcc_mips"
+                    IntermediateDirectory="Release_DrawSprite_Iw2D_vc9_gcc_mips"
+                    ConfigurationType="2"
+                    UseOfMFC="0"
+                    CharacterSet="2">
+                    <Tool
+                        Name="VCCLCompilerTool"
+                        Detect64BitPortabilityProblems="FALSE"
+                        PreprocessorDefinitions=""
+                        Optimization="2"
+                        InlineFunctionExpansion="2"
+                        EnableIntrinsicFunctions="TRUE"
+                        OmitFramePointers="TRUE"
+                        EnableFunctionLevelLinking="TRUE"
+                        StringPooling="TRUE"
+                        DebugInformationFormat="0"
+                        RuntimeLibrary="0"
+                        BrowseInformation="0"
+                        DefaultCharIsUnsigned="TRUE"
+                        MinimalRebuild="FALSE"
+                        AdditionalOptions="/S3Eproject  /FI &quot;c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\build_drawsprite_iw2d_vc9\temp_defines_release.h&quot; /Fe&quot;s3e-custom-tool='c:/marmalade/6.2/tools/gcc/mips/android_mips_windows/bin/mipsel-linux-android-gcc.exe' tooltype=gcc_mips_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -fPIC -EL -mips1 -mabi=32 -Wno-switch -fvisibility=hidden -nostdinc -fPIC --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-frtti --cppflag=-nostdinc++ -fomit-frame-pointer -O3&quot; /FD  "
+                        
+                        IgnoreStandardIncludePath="true"
+                        AdditionalIncludeDirectories="c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/h;c:/marmalade/6.2/modules/iwutil/h;c:/marmalade/6.2/modules/iwgeom/h;c:/marmalade/6.2/modules/iwresmanager/h;c:/marmalade/6.2/modules/iwgl/h;c:/marmalade/6.2/modules/iwgx/h;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/h;c:/marmalade/6.2/modules/iwgxfont/h;c:/marmalade/6.2/modules/iw2d/h;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/source;c:/marmalade/6.2/s3e/h;c:/marmalade/6.2/s3e/h/ext;c:/marmalade/6.2/s3e/h/std;c:/marmalade/6.2/s3e/h/std/c++;c:/marmalade/6.2/s3e/h/ext_legacy;c:/marmalade/6.2/s3e/h/legacy"
+                        UsePrecompiledHeader="0"
+                        WarningLevel="3"
+                        WarnAsError="false"
+                        ExceptionHandling="0"
+                        RuntimeTypeInfo="TRUE"
+
+                        />
+                   <Tool
+                        Name="VCPostBuildEventTool"
+                        CommandLine="set OLDDIR=%CD%&#x0D;&#x0A;echo C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\6.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;c:\marmalade\6.2\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\6.2\s3e&quot;&#x0D;&#x0A;&quot;c:\marmalade\6.2\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d %OLDDIR%&#x0D;&#x0A;"/>
+
+                        <Tool
+                            Name="VCLinkerTool"
+                        LinkIncremental="1"
+                        GenerateDebugInformation="FALSE"
+                        AdditionalOptions="/COMMENT:&quot;s3e-custom-tool='c:/marmalade/6.2/tools/gcc/mips/android_mips_windows/bin/mipsel-linux-android-g++.exe' tooltype=gcc_mips_linker -Wl,--as-needed --sysroot=c:/marmalade/6.2/s3e\..\tools\gcc\mips\android_mips_windows/android-14/arch-mips -Wl,--no-undefined -shared -EL -mips1 -mabi=32 -static-libgcc -nodefaultlibs -Wl,--entry=_IwMain -frtti -Wl,-Tmips_linker_script -Wl,-init -Wl,iwcrt_mips_init -Wl,-fini -Wl,iwcrt_mips_fini -Wl,--no-undefined -Wl,-u_IwAppEntry -Wl,-u_IwAppVersionMajor -Wl,-u_IwAppVersionMinor -Wl,--entry=_IwAppEntry -shared -Wl,-Map='$(OutDir)/DrawSprite_Iw2D.map' -Wl,--start-group -Wl,--whole-archive -liwutil -liwgeom -liwresmanager -liwgx -liwgxfont -liw2d -Wl,--no-whole-archive -ljpeg -lz -lpng -liwgl -ltiniconv -ls3e_cpp -ls3e -ls3e_api -lstdc++ -lc -lm -lgcc -Wl,--end-group --plink:-i&quot; "
+                        TargetMachine="1"
+                        
+                            AdditionalDependencies=""
+                            OutputFile="$(OutDir)/DrawSprite_Iw2D.so"
+                            ProgramDatabaseFile="$(OutDir)/DrawSprite_Iw2D.pdb"
+                            AdditionalLibraryDirectories="&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libjpeg_6b\lib\mips\linux&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\zlib_1.2.4\lib\mips\linux&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\libpng_1.2.34\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwutil\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwgeom\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwresmanager\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwgx\atitools&quot;;&quot;c:\marmalade\6.2\modules\iwgx\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwgl\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iwgxfont\lib\mips\linux&quot;;&quot;c:\Users\Daniel\AppData\Roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\modules\iw2d\lib\mips\linux&quot;;&quot;c:\marmalade\6.2\s3e\lib\mips\linux&quot;"
+                            
+                            
+                            SubSystem="2"
+                            ImportLibrary="$(OutDir)/DrawSprite_Iw2D.lib"
+                            GenerateManifest="false"/>
+                    <Tool
+                        Name="VCMIDLTool"/>
+                    <Tool
+                        Name="VCCustomBuildTool"/>
+                    <Tool
+                        Name="VCPreBuildEventTool"/>
+                    <Tool
+                        Name="VCPreLinkEventTool"/>
+                    <Tool
+                        Name="VCResourceCompilerTool"/>
+                    <Tool
+                        Name="VCWebServiceProxyGeneratorTool"/>
+                    <Tool
+                        Name="VCWebDeploymentTool"/>
+                </Configuration>
+        </Configurations>
+        <Files>
+        		<Filter Name="'Marmalade Studio'">
+			<Filter Name="iw2d">
+				<File RelativePath="c:\marmalade\6.2\modules\iw2d\docs\iw2d.config.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iw2d\docs\iw2d_public.defines.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iw2d\h\Iw2D.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iw2d\iw2d.mkf"/>
+			</Filter>
+			<Filter Name="iwgeom">
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\docs\iwgeom.config.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeom.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomBBox.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomCore.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFBBox.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFIntersect.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFMat.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFMat2D.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFPlane.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFQuat.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFSphere.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFVec2.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFVec3.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomFVec4.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomIntersect.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomLegacy.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomMat.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomMat2D.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomMenu.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomPlane.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomQuat.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomSQuat.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomSVec2.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomSVec3.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomSVec4.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomSphere.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomSqrt.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomVec.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomVec2.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomVec3.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\h\IwGeomVec4.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgeom\iwgeom.mkf"/>
+			</Filter>
+			<Filter Name="iwgl">
+				<File RelativePath="c:\marmalade\6.2\modules\iwgl\docs\iwgl.config.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgl\h\IwGL.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgl\h\IwGLExt.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgl\iwgl.mkf"/>
+			</Filter>
+			<Filter Name="iwgx">
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\docs\iwgx.config.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\docs\iwgx_public.defines.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwClip.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwClip.inl"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwColour.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwDebugPrim.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwFColour.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGx.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxDebug.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxError.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxFuncTable.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxMetrics.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxPrint.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxShaderTechnique.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxState.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxStream.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxSurface.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxTransformSW.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwGxTypes.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwMatAnim.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwMaterial.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwResHandlerMTL.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwTPage.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\h\IwTexture.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgx\iwgx.mkf"/>
+			</Filter>
+			<Filter Name="iwgxfont">
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\docs\iwgxfont.config.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\docs\iwgxfont_public.defines.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\h\IwGxFont.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\h\IwGxFontContainer.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\h\IwGxFontGlyph.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\h\IwGxFontPreparedData.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\h\IwGxFontState.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\h\IwGxFontTypes.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwgxfont\iwgxfont.mkf"/>
+			</Filter>
+			<Filter Name="iwresmanager">
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\docs\iwresmanager.config.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\h\IwResGroup.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\h\IwResHandler.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\h\IwResHandlerGROUP.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\h\IwResHandlerITX.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\h\IwResHandlerImage.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\h\IwResManager.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\h\IwResManagerClass.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\h\IwResSerialise.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwresmanager\iwresmanager.mkf"/>
+			</Filter>
+			<Filter Name="iwutil">
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\docs\iwutil.config.txt"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwAllocator.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwArray.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwAutoFile.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwBuffer.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwChar.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwClassFactory.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwCopyingPtr.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwCore.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwDebug.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwDivTable.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwDivide.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwEvent.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwFibre.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwFile.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwHashString.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwImage.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwImageHelper.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwKeymap.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwList.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwManaged.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwManagedList.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwMath.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwMemBucket.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwMemBucketHelpers.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwMemManagerDL.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwMemory.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwMenu.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwOptimiseARM.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwOptimiseSize.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwOptimiseSpeed.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwOptimiseThumb.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwPath.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwProfileMenu.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwRandom.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwResource.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwRuntime.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwSerialise.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwSingleton.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwString.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwTextParseable.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwTextParser.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwTextParserITX.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwTypes.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwUTF8.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwUncopyable.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwUtil.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwUtilInitTerm.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\h\IwVariableBitField.h"/>
+				<File RelativePath="c:\marmalade\6.2\modules\iwutil\iwutil.mkf"/>
+			</Filter>
+		</Filter>
+		<Filter Name="'Marmalade System (S3E)'">
+			<Filter Name="Extensions">
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eAndroidJNI.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eCameraCapture.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eEMail.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eIOSBackgroundAudio.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eImagePicker.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eLibrary.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eMetrics.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eOSExec.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eOSReadString.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eSMS.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3eWindow.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\ext\s3edebugHeap.h"/>
+			</Filter>
+			<Filter Name="GL">
+				<Filter Name="EGL">
+					<File RelativePath="c:\marmalade\6.2\s3e\h\EGL\egl.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\EGL\eglext.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\EGL\eglplatform.h"/>
+				</Filter>
+				<Filter Name="GLES 1.x">
+					<File RelativePath="c:\marmalade\6.2\s3e\h\GLES\egl.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\GLES\gl.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\GLES\glext.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\GLES\glplatform.h"/>
+				</Filter>
+				<Filter Name="GLES 2.0">
+					<File RelativePath="c:\marmalade\6.2\s3e\h\GLES2\gl2.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\GLES2\gl2ext.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\GLES2\gl2extimg.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\GLES2\gl2platform.h"/>
+				</Filter>
+			</Filter>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\AirplayVersion.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\MarmaladeVersion.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3e.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eAccelerometer.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eAudio.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eCamera.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eClipboard.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eCompass.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eCompression.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eConfig.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eContacts.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eCrypto.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eDebug.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eDevice.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eExt.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eFile.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eGL.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eHash.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eKeyboard.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eLicense.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eLocation.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eMemory.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3ePointer.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eSecureStorage.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eSocket.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eSound.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eSoundRecord.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eSurface.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eThread.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eTimer.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eTypes.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eVersion.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eVibra.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\h\s3eVideo.h"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\s3e.config.txt"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\s3e.icf"/>
+			<File RelativePath="c:\marmalade\6.2\s3e\s3e.mkf"/>
+			<Filter Name="stdc headers">
+				<Filter Name="c++">
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\algorithm"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\bitset"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cassert"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cctype"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cerrno"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cfloat"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\climits"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\clocale"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cmath"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\complex"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\csetjmp"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\csignal"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cstdarg"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cstddef"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cstdio"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cstdlib"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cstring"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\ctime"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cwchar"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\cwctype"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\deque"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\exception"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\exception.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\fstream"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\fstream.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\functional"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\hash_map"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\hash_set"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\iomanip"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\iomanip.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\ios"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\ios.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\iosfwd"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\iostream"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\iostream.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\istream"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\istream.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\iterator"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\limits"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\list"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\locale"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\map"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\mem.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\memory"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\msl_string.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\new"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\new.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\numeric"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\ostream"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\ostream.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\pthread.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\pthread_alloc"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\queue"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\rlocks.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\rope"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\set"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\signal.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\slist"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\sstream"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\stack"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\stdexcept"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\stdio_streambuf"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\stdiostream.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\stl_user_config.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\streambuf"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\streambuf.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\string"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\strstream"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\strstream.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\type_traits.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\typeinfo"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\typeinfo.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\utility"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\valarray"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\c++\vector"/>
+				</Filter>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\alloca.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\assert.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\byteswap.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\ctype.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\dirent.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\dlfcn.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\endian.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\errno.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\fcntl.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\float.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\fnmatch.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\getopt.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\glob.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\grp.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\iconv.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\ifaddrs.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\inttypes.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\langinfo.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\libgen.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\limits.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\locale.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\malloc.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\math.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\math_gcc.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\math_rvct.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\memory.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\netdb.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\poll.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\pthread.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\pthread_types.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\pwd.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\sched.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\semaphore.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\setjmp.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\setjmp_win32.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\sigcontext.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\signal.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\stdarg.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\stdbool.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\stddef.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\stdint.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\stdio.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\stdlib.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\string.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\strings.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\syslog.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\termios.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\time.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\ucontext.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\unistd.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\utime.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\wchar.h"/>
+				<File RelativePath="c:\marmalade\6.2\s3e\h\std\wctype.h"/>
+				<Filter Name="sys">
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\dir.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\file.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\ioctl.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\ipc.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\mman.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\param.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\poll.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\prctl.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\resource.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\select.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\sem.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\sendfile.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\shm.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\signal.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\socket.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\stat.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\time.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\times.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\types.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\uio.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\un.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\utsname.h"/>
+					<File RelativePath="c:\marmalade\6.2\s3e\h\std\sys\wait.h"/>
+				</Filter>
+			</Filter>
+		</Filter>
+		<Filter Name="(libjpeg)">
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\cderror.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\cdjpeg.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jchuff.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jconfig.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jdct.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jdhuff.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jerror.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jinclude.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jmemsys.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jmorecfg.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jpegint.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jpeglib.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\jversion.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\h\transupp.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libjpeg_6b\libjpeg.mkf"/>
+		</Filter>
+		<Filter Name="(libpng)">
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libpng_1.2.34\h\png.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libpng_1.2.34\h\pngconf.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\libpng_1.2.34\libpng.mkf"/>
+		</Filter>
+		<Filter Name="(tiniconv)">
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\h\tiniconv.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\h\tiniconv_int.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\tiniconv_1.0.1\tiniconv.mkf"/>
+		</Filter>
+		<Filter Name="(zlib)">
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\zlib_1.2.4\h\zconf.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\zlib_1.2.4\h\zlib.h"/>
+			<File RelativePath="c:\users\daniel\appdata\roaming\marmalade\packages\6.2.0\zlib_1.2.4\zlib.mkf"/>
+		</Filter>
+		<Filter Name="Source">
+			<File RelativePath="c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\source\Main.cpp"/>
+			<File RelativePath="c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\source\Main.h"/>
+		</Filter>
+		<File RelativePath="c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\data\app.config.txt"/>
+		<File RelativePath="c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\data\app.icf"/>
+	<File
+		RelativePath="c:\Users\Daniel\Documents\DrawSprite_Iw2D\DrawSprite_Iw2D\DrawSprite_Iw2D.mkb">
+	<FileConfiguration Name="X86 Debug|Win32">
+		<Tool
+			Name="VCCustomBuildTool"
+			Description="c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb"
+			CommandLine="&quot;C:\Marmalade\6.2\s3e\python\python.exe&quot; &quot;C:\Marmalade\6.2\s3e\makefile_builder\mkb.py&quot; &quot;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb&quot; &quot;--default-buildenv=vc9&quot; --msvc-project"
+			AdditionalDependencies="c:/marmalade/6.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/6.2/modules/iwutil/iwutil.mkf;c:/marmalade/6.2/s3e/s3e.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/zlib.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/libpng.mkf;c:/marmalade/6.2/modules/iw2d/iw2d.mkf;c:/marmalade/6.2/modules/iwgx/iwgx.mkf;c:/marmalade/6.2/modules/iwgl/iwgl.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/tiniconv.mkf;c:/marmalade/6.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/6.2/modules/iwgxfont/iwgxfont.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/libjpeg.mkf;"
+			Outputs="DrawSprite_Iw2D_vc9.stamp;"
+/>
+	</FileConfiguration>
+	<FileConfiguration Name="X86 Release|Win32">
+		<Tool
+			Name="VCCustomBuildTool"
+			Description="c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb"
+			CommandLine="&quot;C:\Marmalade\6.2\s3e\python\python.exe&quot; &quot;C:\Marmalade\6.2\s3e\makefile_builder\mkb.py&quot; &quot;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb&quot; &quot;--default-buildenv=vc9&quot; --msvc-project"
+			AdditionalDependencies="c:/marmalade/6.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/6.2/modules/iwutil/iwutil.mkf;c:/marmalade/6.2/s3e/s3e.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/zlib.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/libpng.mkf;c:/marmalade/6.2/modules/iw2d/iw2d.mkf;c:/marmalade/6.2/modules/iwgx/iwgx.mkf;c:/marmalade/6.2/modules/iwgl/iwgl.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/tiniconv.mkf;c:/marmalade/6.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/6.2/modules/iwgxfont/iwgxfont.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/libjpeg.mkf;"
+			Outputs="DrawSprite_Iw2D_vc9.stamp;"
+/>
+	</FileConfiguration>
+	<FileConfiguration Name="RVCT ARM Debug|Win32">
+		<Tool
+			Name="VCCustomBuildTool"
+			Description="c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb"
+			CommandLine="&quot;C:\Marmalade\6.2\s3e\python\python.exe&quot; &quot;C:\Marmalade\6.2\s3e\makefile_builder\mkb.py&quot; &quot;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb&quot; &quot;--default-buildenv=vc9&quot; --msvc-project"
+			AdditionalDependencies="c:/marmalade/6.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/6.2/modules/iwutil/iwutil.mkf;c:/marmalade/6.2/s3e/s3e.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/zlib.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/libpng.mkf;c:/marmalade/6.2/modules/iw2d/iw2d.mkf;c:/marmalade/6.2/modules/iwgx/iwgx.mkf;c:/marmalade/6.2/modules/iwgl/iwgl.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/tiniconv.mkf;c:/marmalade/6.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/6.2/modules/iwgxfont/iwgxfont.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/libjpeg.mkf;"
+			Outputs="DrawSprite_Iw2D_vc9.stamp;"
+/>
+	</FileConfiguration>
+	<FileConfiguration Name="RVCT ARM Release|Win32">
+		<Tool
+			Name="VCCustomBuildTool"
+			Description="c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb"
+			CommandLine="&quot;C:\Marmalade\6.2\s3e\python\python.exe&quot; &quot;C:\Marmalade\6.2\s3e\makefile_builder\mkb.py&quot; &quot;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb&quot; &quot;--default-buildenv=vc9&quot; --msvc-project"
+			AdditionalDependencies="c:/marmalade/6.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/6.2/modules/iwutil/iwutil.mkf;c:/marmalade/6.2/s3e/s3e.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/zlib.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/libpng.mkf;c:/marmalade/6.2/modules/iw2d/iw2d.mkf;c:/marmalade/6.2/modules/iwgx/iwgx.mkf;c:/marmalade/6.2/modules/iwgl/iwgl.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/tiniconv.mkf;c:/marmalade/6.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/6.2/modules/iwgxfont/iwgxfont.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/libjpeg.mkf;"
+			Outputs="DrawSprite_Iw2D_vc9.stamp;"
+/>
+	</FileConfiguration>
+	<FileConfiguration Name="GCC ARM Debug|Win32">
+		<Tool
+			Name="VCCustomBuildTool"
+			Description="c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb"
+			CommandLine="&quot;C:\Marmalade\6.2\s3e\python\python.exe&quot; &quot;C:\Marmalade\6.2\s3e\makefile_builder\mkb.py&quot; &quot;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb&quot; &quot;--default-buildenv=vc9&quot; --msvc-project"
+			AdditionalDependencies="c:/marmalade/6.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/6.2/modules/iwutil/iwutil.mkf;c:/marmalade/6.2/s3e/s3e.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/zlib.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/libpng.mkf;c:/marmalade/6.2/modules/iw2d/iw2d.mkf;c:/marmalade/6.2/modules/iwgx/iwgx.mkf;c:/marmalade/6.2/modules/iwgl/iwgl.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/tiniconv.mkf;c:/marmalade/6.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/6.2/modules/iwgxfont/iwgxfont.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/libjpeg.mkf;"
+			Outputs="DrawSprite_Iw2D_vc9.stamp;"
+/>
+	</FileConfiguration>
+	<FileConfiguration Name="GCC ARM Release|Win32">
+		<Tool
+			Name="VCCustomBuildTool"
+			Description="c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb"
+			CommandLine="&quot;C:\Marmalade\6.2\s3e\python\python.exe&quot; &quot;C:\Marmalade\6.2\s3e\makefile_builder\mkb.py&quot; &quot;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb&quot; &quot;--default-buildenv=vc9&quot; --msvc-project"
+			AdditionalDependencies="c:/marmalade/6.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/6.2/modules/iwutil/iwutil.mkf;c:/marmalade/6.2/s3e/s3e.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/zlib.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/libpng.mkf;c:/marmalade/6.2/modules/iw2d/iw2d.mkf;c:/marmalade/6.2/modules/iwgx/iwgx.mkf;c:/marmalade/6.2/modules/iwgl/iwgl.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/tiniconv.mkf;c:/marmalade/6.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/6.2/modules/iwgxfont/iwgxfont.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/libjpeg.mkf;"
+			Outputs="DrawSprite_Iw2D_vc9.stamp;"
+/>
+	</FileConfiguration>
+	<FileConfiguration Name="GCC MIPS Debug|Win32">
+		<Tool
+			Name="VCCustomBuildTool"
+			Description="c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb"
+			CommandLine="&quot;C:\Marmalade\6.2\s3e\python\python.exe&quot; &quot;C:\Marmalade\6.2\s3e\makefile_builder\mkb.py&quot; &quot;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb&quot; &quot;--default-buildenv=vc9&quot; --msvc-project"
+			AdditionalDependencies="c:/marmalade/6.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/6.2/modules/iwutil/iwutil.mkf;c:/marmalade/6.2/s3e/s3e.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/zlib.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/libpng.mkf;c:/marmalade/6.2/modules/iw2d/iw2d.mkf;c:/marmalade/6.2/modules/iwgx/iwgx.mkf;c:/marmalade/6.2/modules/iwgl/iwgl.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/tiniconv.mkf;c:/marmalade/6.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/6.2/modules/iwgxfont/iwgxfont.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/libjpeg.mkf;"
+			Outputs="DrawSprite_Iw2D_vc9.stamp;"
+/>
+	</FileConfiguration>
+	<FileConfiguration Name="GCC MIPS Release|Win32">
+		<Tool
+			Name="VCCustomBuildTool"
+			Description="c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb"
+			CommandLine="&quot;C:\Marmalade\6.2\s3e\python\python.exe&quot; &quot;C:\Marmalade\6.2\s3e\makefile_builder\mkb.py&quot; &quot;c:/Users/Daniel/Documents/DrawSprite_Iw2D/DrawSprite_Iw2D/DrawSprite_Iw2D.mkb&quot; &quot;--default-buildenv=vc9&quot; --msvc-project"
+			AdditionalDependencies="c:/marmalade/6.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/6.2/modules/iwutil/iwutil.mkf;c:/marmalade/6.2/s3e/s3e.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/zlib_1.2.4/zlib.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libpng_1.2.34/libpng.mkf;c:/marmalade/6.2/modules/iw2d/iw2d.mkf;c:/marmalade/6.2/modules/iwgx/iwgx.mkf;c:/marmalade/6.2/modules/iwgl/iwgl.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/tiniconv_1.0.1/tiniconv.mkf;c:/marmalade/6.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/6.2/modules/iwgxfont/iwgxfont.mkf;c:/users/daniel/appdata/roaming/marmalade/packages/6.2.0/libjpeg_6b/libjpeg.mkf;"
+			Outputs="DrawSprite_Iw2D_vc9.stamp;"
+/>
+	</FileConfiguration>
+</File>
+
+        </Files>
+        <Globals>
+        </Globals>
+    </VisualStudioProject>
+    

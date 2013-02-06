@@ -1,0 +1,36 @@
+#!/usr/bin/env mkb
+options
+{
+}
+
+subprojects
+{
+	iw2d
+}
+
+includepath
+{
+	./source
+}
+
+files
+{
+	[Source]
+	(source)
+	# Game
+	Main.cpp
+	Main.h
+
+	[Data]
+	(data)
+}
+
+assets
+{
+	(data)
+	test1.png
+	test2.png
+
+	(data-ram/data-gles1, data)
+}
+
